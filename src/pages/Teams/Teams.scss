@@ -1,0 +1,187 @@
+.team-container {
+    background-color: #fafbfd;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+
+    .team-wrapper {
+        margin-top: 2rem;
+
+        .members-sec {
+            border-top: 1px solid #e9e9e9;
+            padding: 0rem 0.8rem;
+            text-align: center;
+
+            .team-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.8rem 0.5rem;
+
+                .title {
+                    font-size: 1.1rem;
+                }
+
+                .sort-sec {
+                    display: flex;
+                    align-items: center;
+
+                    .label {
+                        font-size: 0.9rem;
+                    }
+
+                    .sort {
+                        background: transparent;
+                        height: 1.9rem;
+                        font-size: 0.9rem;
+                        width: 1.8rem;
+                        border: none;
+                        padding: 0;
+                        padding-left: 0.6rem;
+                    }
+                }
+            }
+
+            .all-cards-sec {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+                .member-card {
+                    box-shadow: 0px 13px 18px rgba(57, 84, 255, 0.04);
+                    border-radius: 7px;
+                    border: none;
+                    width: 15rem;
+                    margin: 0.8rem 0.5rem;
+                    position: relative;
+
+                    .icon {
+                        position: absolute;
+                        top: 20px;
+                        right: 10px;
+                        cursor: pointer;
+                        font-size: 1.3rem;
+                        color: #4d4d4d;
+                    }
+
+                    .member-body {
+                        padding: 4rem 0rem 1.5rem 0rem;
+                        .member-profile-image {
+                        }
+
+                        .member-name {
+                            font-size: 1.3rem;
+                            color: #1f2127;
+                            padding-top: 0.6rem;
+                        }
+
+                        .member-email {
+                            font-size: 0.9rem;
+                            color: rgb(82, 82, 82);
+                        }
+                    }
+
+                    .member-footer {
+                        text-transform: uppercase;
+                        color: #3954ff;
+                        background: rgba(57, 84, 255, 0.03);
+                        border-radius: 0px 0px 7px 7px;
+                        border: none;
+                        padding: 1rem 0rem;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .top-work-card {
+            height: 40rem;
+            box-shadow: 0px 13px 18px rgba(57, 84, 255, 0.04);
+            border-radius: 12px;
+            border: none;
+            width: 100%;
+            text-align:center;
+
+            .top-work-header {
+                border-radius: 12px 12px 0px 0px;
+                background-color: #fff;
+                padding: 3rem 0rem;
+
+
+                .logo {
+                    width: 3rem;
+                }
+
+                .comp-name {
+                    color: #1f2127;
+                    font-size: 1.3rem;
+                    margin-top: 0.3rem;
+                }
+
+                .comp-subtitle {
+                    font-size: 0.9rem;
+                    color: rgb(85, 85, 85);
+                }
+
+                .comp-email {
+                    font-size: 0.8rem;
+                    color: rgb(163, 163, 163);
+                }
+            }
+
+            .top-work-body {
+                padding: 2rem 1rem 2rem 1rem;
+
+                .comp-mem-deets {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.5rem 0.8rem;
+                    background: rgba(57, 84, 255, 0.05);
+                    border-radius: 12px;
+                    margin-top: 2rem;
+
+                    .comp-mem-img {
+                        width: 3.5rem;
+                    }
+
+                    .mem-deets {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-left: 0.6rem;
+
+                        .name {
+                            font-size: 1.1rem;
+                        }
+
+                        .role {
+                            font-size: 0.8rem;
+                            color: #555;
+                        }
+                    }
+                }
+
+                .comp-analytics {
+                    padding: 0.8rem 1rem;
+                    background: rgba(57, 84, 255, 0.05);
+                    border-radius: 12px;
+                    margin-top: 1rem;
+
+                    .title {
+                        font-size: 0.9rem;
+                        text-align: left;
+                    }
+
+                    .graph-sec {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+
+                        .percent {
+                            font-size: 1.4rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

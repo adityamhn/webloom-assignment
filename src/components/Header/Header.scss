@@ -1,0 +1,93 @@
+.header-cont {
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        .title {
+            font-size: 1.6rem;
+            font-weight: normal;
+        }
+
+        .header-end {
+            display: flex;
+            align-items: center;
+
+            .search-sec {
+                display: flex;
+                position: relative;
+                align-items: center;
+
+                .icon {
+                    font-size: 1.4rem;
+                    position: absolute;
+                    cursor: text;
+                    color: #1f2127;
+                    transition: all 0.5s ease;
+                }
+
+                .input-field {
+                    background: transparent;
+                    width: 0.5rem;
+                    transition: all 0.5s ease;
+                    border: none;
+                    border-radius: 0px;
+                    cursor: text;
+
+                    &:focus {
+                        width: 25rem;
+                        padding-left: 1.8rem;
+                        box-shadow: none;
+                        border-bottom: 1px solid #c4c4c4;
+                        cursor: text;
+                    }
+                }
+            }
+
+            .noti-sec {
+                margin-left: 2.5rem;
+                display: flex;
+                align-items: center;
+                color: #1f2127;
+
+                .noti-toggle {
+                    background: transparent;
+                    border: none;
+                    padding: 0;
+
+                    &::after {
+                        content: "";
+                        border: none;
+                        margin: 0;
+                    }
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                .icon {
+                    font-size: 1.6rem;
+                    cursor: pointer;
+                    color: #1f2127;
+                }
+            }
+
+            .profile-sec {
+                margin-left: 2.5rem;
+                display: flex;
+                align-items: center;
+
+                .prof-toggle {
+                    background: transparent;
+                    border: none;
+                    color: #1f2127;
+                    padding: 0;
+
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}

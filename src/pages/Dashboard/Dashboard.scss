@@ -1,0 +1,179 @@
+.dashboard-container {
+    background-color: #fafbfd;
+    min-height: 100vh;
+    padding: 3rem 2rem;
+
+    .dashboard-wrapper {
+        margin-top: 2rem;
+        .main-cards-sec {
+            display: flex;
+            align-items: stretch;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            height: 21rem;
+
+            .data-card {
+                border: none;
+                box-shadow: 0px 13px 18px rgba(57, 84, 255, 0.04);
+                border-radius: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                margin: 0.5rem 0.5rem;
+                padding: 1.1rem;
+                width: 45%;
+                height: 10rem;
+
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .title {
+                        font-weight: normal;
+                        font-size: 1rem;
+                    }
+
+                    .dots {
+                        font-size: 1.3rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .deets {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+
+                        .percent {
+                            font-size: 1.5rem;
+                            font-weight: bold;
+                        }
+
+                        .name {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .task-activity-card {
+            margin: 0.5rem 0.7rem;
+            padding: 1rem 1rem 1.5rem 1rem;
+            box-shadow: 0px 13px 18px rgba(57, 84, 255, 0.04);
+            border-radius: 12px;
+            border: none;
+            height: 21rem;
+
+            .title {
+                text-align: left;
+                padding-bottom: 0.5rem;
+                margin-left: 1rem;
+            }
+
+            .graph {
+                height: 100%;
+            }
+        }
+
+        .team-activity-card {
+            margin: 0.8rem 0.7rem;
+            padding: 1.5rem 1rem 1.5rem 1rem;
+            box-shadow: 0px 13px 18px rgba(57, 84, 255, 0.04);
+            border-radius: 12px;
+            border: none;
+            height: 30rem;
+
+            .title {
+                text-align: left;
+                padding-bottom: 0.5rem;
+                margin-left: 1rem;
+            }
+
+            .graph {
+                height: 100%;
+            }
+        }
+
+        .team-member-card {
+            margin: 0.8rem 0.7rem;
+            padding: 1.5rem 1.2rem;
+            box-shadow: 0px 13px 18px rgba(57, 84, 255, 0.04);
+            border-radius: 12px;
+            border: none;
+            height: 30rem;
+
+            .title {
+                text-align: left;
+                margin-bottom: 2rem;
+            }
+
+            .all-members {
+                height: 100%;
+                overflow-y: auto;
+                padding: 0rem 0.8rem;
+
+                &::-webkit-scrollbar-track {
+                    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.01);
+                    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.01);
+                    background-color: #fff;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 3px;
+                    background-color: #fff;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: #e5e5e5;
+                }
+            }
+
+            .member {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #e5e5e5;
+                padding: 0.8rem 0rem;
+
+                .member-details {
+                    display: flex;
+                    align-items: center;
+
+                    .member-img {
+                        width: 3.5rem;
+                    }
+
+                    .member-deets {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        margin-left: 0.6rem;
+
+                        .name {
+                            font-size: 1.2rem;
+                        }
+
+                        .role {
+                            font-size: 0.8rem;
+                            color: #555;
+                        }
+                    }
+                }
+
+                .member-performance {
+                    background: rgba(57, 84, 255, 0.06);
+                    border-radius: 4px;
+                    padding: 0.2rem 0.5rem;
+                    font-size: 0.9rem;
+                    color: #3954ff;
+                }
+            }
+        }
+    }
+}
